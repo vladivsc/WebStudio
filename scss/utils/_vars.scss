@@ -1,0 +1,26 @@
+:root {
+  /* *Fonts* */
+
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+
+  /* *Background colors* */
+
+  --main-bg-color: #fff;
+  --secondary-bg-color: #f5f4fa;
+  --hero-footer-bg-color: #2f303a;
+  --hover-bg-color: #188ce8;
+
+  /* *Text colors* */
+
+  --primary-text-color: #212121;
+  --secondary-text-color: #fff;
+  --main-text-color: #757575;
+
+  --accent-color: #2196f3;
+  --secondary-color: #000;
+
+  /* *Animations* */
+
+  --fast-anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,27 @@
+.modal-form__custom-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  margin-left: 12px;
+
+  border-radius: 2px;
+  border: 2px solid var(--primary-text-color);
+
+  transition: border-color var(--fast-anim), background-color var(--fast-anim);
+
+    &:hover,
+    &:focus {
+      border-color: var(--accent-color);
+    } 
+}
+
+.modal-form__custom-checkbox-icon {
+  opacity: 0;
+
+  transition: opacity var(--fast-anim);
+}
+

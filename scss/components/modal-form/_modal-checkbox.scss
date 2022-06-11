@@ -1,0 +1,8 @@
+.checkbox:checked+.modal-form__custom-checkbox .modal-form__custom-checkbox-icon {
+  opacity: 1;
+}
+
+.checkbox:checked+.modal-form__custom-checkbox {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- *Style normalize* -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+
+    <!-- *My styles* -->
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+
+    <!-- *Fonts* -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--*Header*-->
+
+    <header class="header">
+      <div class="header-container container">
+        <a class="logo-primary link logo" href="./index.html">
+          Web
+          <span class="logo-secondary">Studio</span>
+        </a>
+
+        <nav class="navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a class="navigation__link link" href="index.html">Studio</a>
+            </li>
+            <li class="navigation__item">
+              <a
+                class="navigation__link navigation__link--current link"
+                href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header-contacts list">
+          <li class="item header-contacts__item">
+            <a
+              class="header-contacts__link link"
+              href="mailto:info@devstudio.com"
+              ><svg class="header-contacts__icon" width="16" height="12">
+                <use href="./images/sprite.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="header-contacts__item item">
+            <a class="header-contacts__link link" href="tel:+380961111111">
+              <svg class="header-contacts__icon" width="10" height="16">
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- *Gallery-navigation section* -->
+
+      <section class="gallery-section section">
+        <h1 class="visually-hidden">Work gallery</h1>
+
+        <div class="gallery-nav container">
+          <ul class="gallery-nav__list list">
+            <li class="gallery-nav__item item">
+              <button class="gallery-nav__btn" type="button">All</button>
+            </li>
+            <li class="gallery-nav__item item">
+              <button class="gallery-nav__btn" type="button">Web sites</button>
+            </li>
+            <li class="gallery-nav__item item">
+              <button class="gallery-nav__btn" type="button">
+                Applications
+              </button>
+            </li>
+            <li class="gallery-nav__item item">
+              <button class="gallery-nav__btn" type="button">Design</button>
+            </li>
+            <li class="gallery-nav__item item">
+              <button class="gallery-nav__btn" type="button">Marketing</button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- *Content -->
+
+        <div class="content container">
+          <ul class="content__list list">
+            <li class="content__item item">
+              <a class="content__link link" href="">
+                <div class="content-post">
+                  <img
+                    src="./images/portfolio/project-1.jpg"
+                    alt="Website example"
+                    width="370"
+                  />
+                  <p class="content-post__text">
+                    Resources offer complex solutions with different levels of
+                    functionality and services. Thanks to this, of course,
+                    visitors receive information about the company or about the
+                    individual.
+                  </p>
+                </div>
+                <div class="content-description">
+                  <h2 class="content-description__title">Example</h2>
+                  <p class="text content-description__subtitle">Web site</p>
+                </div>
+              </a>
+            </li>
+            <li class="content__item item">
+              <a class="content__link link" href="">
+                <div class="content-post">
+                  <img
+                    src="./images/portfolio/project-2.jpg"
+                    alt="Poster New Orleans vs Golden Star"
+                    width="370"
+                  />
+                  <p class="content-post__text">
+                    Resources offer complex solutions with different levels of
+                    functionality and services. Thanks to this, of course,
+                    visitors receive information about the company or about the
+                    individual.
+                  </p>
+                </div>
+                <div class="content-description">
+                  <h2 class="content-description__title">
+                    Poster New Orleans vs Golden Star
+                  </h2>
+                  <p class="text content-description__subtitle">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="content__item item">
+              <a class="content__link link" href="">
+                <div class="content-post">
+                  <img
+                    src="./images/portfolio/project-3.jpg"
+                    alt="Seafood restaurant"
+                    width="370"
+                  />
+                  <p class="content-post__text">
+                    Resources offer complex solutions with different levels of
+                    functionality and services. Thanks to this, of course,
+                    visitors receive information about the company or about the
+                    individual.
+                  </p>
+                </div>
+                <div class="content-description">
+                  <h2 class="content-description__title">Seafood restaurant</h2>
+                  <p class="text content-description__subtitle">Application</p>
+                </div>
+              </a>
+            </li>
+            <li class="content__item item">
+              <a class="content__link link" href="">
+                <div class="content-post">
+                  <img
+                    src="./images/portfolio/project-4.jpg"
+                    alt="Project Prime"
+                    width="370"
+                  />
+                  <p class="content-post__text">
+                    Resources offer complex solutions with different levels of
+                    functionality and services. Thanks to this, of course,
+                    visitors receive information about the company or about the
+                    individual.
+                  </p>
+                </div>
+                <div class="content-description">
+                  <h2 class="content-description__title">Project Prime</h2>
+                  <p class="content-description__subtitle text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="content__item item">
+              <a class="content__link link" href="">
+                <div class="content-post">
+                  <img
+                    src="./images/portfolio/project-5.jpg"
+                    alt="Project Boxes"
+                    width="370"
+                  />
+                  <p class="content-post__text">
+                    Resources offer complex solutions with different levels of
+                    functionality and services. Thanks to this, of course,
+                    visitors receive information about the company or about the
+                    individual.
+                  </p>
+                </div>
+                <div class="content-description">
+                  <h2 class="content-description__title">Project Boxes</h2>
+                  <p class="text content-description__subtitle">Application</p>
+                </div>
+              </a>
+            </li>
+            <li class="content__item item">
+              <a class="content__link link" href="">
+                <div class="content-post">
+                  <img
+                    src="./images/portfolio/project-6.jpg"
+                    alt="Book Limited Edition"
+                    width="370"
+                  />
+                  <p class="content-post__text">
+                    Resources offer complex solutions with different levels of
+                    functionality and services. Thanks to this, of course,
+                    visitors receive information about the company or about the
+                    individual.
+                  </p>
+                </div>
+                <div class="content-description">
+                  <h2 class="content-description__title">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="text content-description__subtitle">Web site</p>
+                </div>
+              </a>
+            </li>
+            <li class="content__item item">
+              <a class="content__link link" href="">
+                <div class="content-post">
+                  <img
+                    src="./images/portfolio/project-7.jpg"
+                    alt="Book Limited Edition"
+                    width="370"
+                  />
+                  <p class="content-post__text">
+                    Resources offer complex solutions with different levels of
+                    functionality and services. Thanks to this, of course,
+                    visitors receive information about the company or about the
+                    individual.
+                  </p>
+                </div>
+                <div class="content-description">
+                  <h2 class="content-description__title">
+                    Publication Limited Edition
+                  </h2>
+                  <p class="text content-description__subtitle">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="content__item item">
+              <a class="content__link link" href="">
+                <div class="content-post">
+                  <img
+                    src="./images/portfolio/project-8.jpg"
+                    alt="Project LAB"
+                    width="370"
+                  />
+                  <p class="content-post__text">
+                    Resources offer complex solutions with different levels of
+                    functionality and services. Thanks to this, of course,
+                    visitors receive information about the company or about the
+                    individual.
+                  </p>
+                </div>
+                <div class="content-description">
+                  <h2 class="content-description__title">Project LAB</h2>
+                  <p class="text content-description__subtitle">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="content__item item">
+              <a class="content__link link" href="">
+                <div class="content-post">
+                  <img
+                    src="./images/portfolio/project-9.jpg"
+                    alt="Application for Business"
+                    width="370"
+                  />
+                  <p class="content-post__text">
+                    Resources offer complex solutions with different levels of
+                    functionality and services. Thanks to this, of course,
+                    visitors receive information about the company or about the
+                    individual.
+                  </p>
+                </div>
+                <div class="content-description">
+                  <h2 class="content-description__title">Growing Business</h2>
+                  <p class="text content-description__subtitle">Application</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!--*Footer*-->
+
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="footer-contacts">
+          <a class="link logo logo-primary-footer" href="./index.html"
+            >Web<span class="logo-secondary-footer">Studio</span></a
+          >
+          <address>
+            <ul class="list footer-contacts__list">
+              <li class="item footer-contacts__location">
+                <a
+                  class="link footer-contacts__location-link"
+                  href="https://goo.gl/maps/CiyNuwv28CsmYzVaA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Kyiv, Lesya Ukrainka Ave, 26</a
+                >
+              </li>
+              <li class="item footer-contacts__item">
+                <a
+                  class="link footer-contacts__link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="item footer-contacts__item">
+                <a class="link footer-contacts__link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-socials">
+          <p class="footer-socials__title">JOIN US</p>
+          <ul class="footer-socials__list list">
+            <li class="footer-socials__item item">
+              <a
+                class="footer-socials__link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram icon"
+              >
+                <svg class="footer-socials__icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="footer-socials__item item">
+              <a
+                class="footer-socials__link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter icon"
+              >
+                <svg class="footer-socials__icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="footer-socials__item item">
+              <a
+                class="footer-socials__link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook icon"
+              >
+                <svg class="footer-socials__icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="footer-socials__item item">
+              <a
+                class="footer-socials__link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn icon"
+              >
+                <svg class="footer-socials__icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <p class="subscribe__title">Subscribe to newsletter</p>
+          <form class="subscribe__form">
+            <label for="footer-email"></label>
+            <input
+              class="subscribe__email"
+              type="email"
+              name="subscribe__email"
+              id="footer-email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="btn subscribe-btn">
+              <span class="subscribe-text">Subscribe</span>
+              <svg class="" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

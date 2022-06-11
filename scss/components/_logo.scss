@@ -1,0 +1,44 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-primary {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--accent-color);
+}
+
+.logo-secondary {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-color);
+}
+
+// *logo footer
+
+.logo-primary-footer {
+  width: 145px;
+
+  margin-bottom: 20px;
+
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--accent-color);
+}
+
+.logo-secondary-footer {
+  color: var(--secondary-text-color);
+}
