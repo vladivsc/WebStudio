@@ -1,33 +1,34 @@
 //  *utils
 
- @import './utils/vars';
- @import './utils/visually-hidden';
+@import "./utils/vars";
+@import "./utils/visually-hidden";
+@import "./utils/mixins";
 
 //  *base styles
 
-@import './base/common';
-@import './base/reset';
-@import './base/container';
+@import "./base/common";
+@import "./base/reset";
+@import "./base/container";
 
 // *components
 
-@import './components/logo';
-@import './components/buttons';
-@import './components/socials';
-@import './components/modal-form/module';
+@import "./components/logo";
+@import "./components/buttons";
+@import "./components/socials";
+@import "./components/modal-form/module";
 
 // *layouts
 
 // studio
-@import './layouts/header';
-@import './layouts/studio/hero';
-@import './layouts/studio/feature';
-@import './layouts/studio/activities';
-@import './layouts/studio/team';
-@import './layouts/studio/clients';
-@import './layouts/footer';
+@import "./layouts/header";
+@import "./layouts/studio/hero";
+@import "./layouts/studio/feature";
+@import "./layouts/studio/activities";
+@import "./layouts/studio/team";
+@import "./layouts/studio/clients";
+@import "./layouts/footer";
 
 // portfolio
 
-@import './layouts/portfolio/gallery-btn';
-@import './layouts/portfolio/content';
+@import "./layouts/portfolio/gallery-btn";
+@import "./layouts/portfolio/content";
