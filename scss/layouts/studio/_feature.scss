@@ -1,11 +1,13 @@
 .feature-container {
   @include mq(tablet) {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
 .feature__list {
-  @include mq(mobile) {
+  @include mq(mobile-only) {
     margin-bottom: 30px;
 
     &:last-child {
@@ -13,16 +15,17 @@
     }
   }
   @include mq(tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     width: 354px;
 
     margin-bottom: 30px;
     margin-right: 30px;
 
-    &:last-child {
+    &:nth-child(even) {
       margin-right: 0;
+    }
+
+    &::nth-child(-n + 2) {
+      margin-bottom: 0;
     }
   }
   @include mq(desktop) {
