@@ -6,7 +6,7 @@
 }
 
 .clients__item {
-  @include mq(mobile) {
+  @include mq(mobile-only) {
     margin-right: 30px;
     margin-bottom: 30px;
 
@@ -14,6 +14,17 @@
       margin-right: 0px;
     }
     &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
+  @include mq(tablet-only) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-last-child(3n + 1) {
+      margin-right: 0px;
+    }
+    &:nth-last-child(-n + 3) {
       margin-bottom: 0px;
     }
   }
