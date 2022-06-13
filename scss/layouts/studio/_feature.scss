@@ -1,7 +1,11 @@
 .feature-container {
-  @include mq(tablet) {
+  @include mq(tablet-only) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+  @include mq(desktop) {
+    display: flex;
     justify-content: center;
   }
 }
@@ -21,11 +25,11 @@
     margin-right: 30px;
 
     &:nth-child(even) {
-      margin-right: 0;
+      margin-right: 0px;
     }
 
-    &::nth-child(-n + 2) {
-      margin-bottom: 0;
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
     }
   }
   @include mq(desktop) {
@@ -37,96 +41,51 @@
   }
 }
 
-.feature__item {
-}
-
 .feature__box {
-  @include mq(mobile) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  margin-bottom: 30px;
+
+  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
+
+  @include mq(mobile) {
     width: 450px;
     height: 120px;
-
-    margin-bottom: 30px;
-
-    background-color: var(--secondary-bg-color);
-    border-radius: 4px;
   }
   @include mq(tablet) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     width: 354px;
     height: 120px;
-
-    margin-bottom: 30px;
-
-    background-color: var(--secondary-bg-color);
-    border-radius: 4px;
   }
   @include mq(desktop) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     width: 270px;
     height: 120px;
-
-    margin-bottom: 30px;
-
-    background-color: var(--secondary-bg-color);
-    border-radius: 4px;
   }
 }
 
 .feature__title {
-  @include mq(mobile) {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-align: center;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
 
-    color: var(--primary-text-color);
-  }
+  color: var(--primary-text-color);
+
   @include mq(tablet) {
-    margin-bottom: 10px;
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
     text-align: left;
-
-    color: var(--primary-text-color);
   }
   @include mq(desktop) {
-    margin-bottom: 10px;
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    color: var(--primary-text-color);
+    text-align: left;
   }
 }
 
 .feature__subtitle {
-  @include mq(mobile) {
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-  }
-  @include mq(desktop) {
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-  }
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
