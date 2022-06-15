@@ -1,5 +1,5 @@
 .feature-container {
-  @include mq(tablet-only) {
+  @include mq(tablet) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -11,7 +11,7 @@
 }
 
 .feature__list {
-  @include mq(mobile-only) {
+  @include mq(mobile) {
     margin-bottom: 30px;
 
     &:last-child {
@@ -19,25 +19,12 @@
     }
   }
   @include mq(tablet) {
-    width: 354px;
-
-    margin-bottom: 30px;
-    margin-right: 30px;
-
-    &:nth-child(even) {
-      margin-right: 0px;
-    }
-
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0px;
-    }
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
   @include mq(desktop) {
-    margin-right: 30px;
-
-    &:last-child {
-      margin-right: 0px;
-    }
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
   }
 }
 

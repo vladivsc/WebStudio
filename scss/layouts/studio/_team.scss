@@ -26,48 +26,38 @@
 }
 
 .team__list {
-  @include mq(desktop) {
-    display: flex;
-    align-items: center;
-  }
-  @include mq(tablet-only) {
+  @include mq(tablet) {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin: -15px;
+  }
+  @include mq(desktop) {
+    display: flex;
+    align-items: center;
+    margin: -15px;
   }
 }
 
 .team__item {
-  @include mq(mobile) {
+  @include mq(mobile-only) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-    width: 450px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
-  @include mq(tablet-only) {
-    width: 354px;
-    margin-right: 30px;
-
-    &:nth-child(even) {
-      margin-right: 0;
-    }
-
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0px;
-    }
+  @include mq(tablet) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
 
   @include mq(desktop) {
-    margin-right: 30px;
-
-    width: 270px;
-
-    &:last-child {
-      margin-right: 0px;
-    }
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
   }
 
   background-color: var(--main-bg-color);
