@@ -745,6 +745,12 @@ img {
   padding-top: 0;
 }
 
+@media screen and (max-width: 1199px) {
+  .activities {
+    display: none;
+  }
+}
+
 .activities__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -752,15 +758,13 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: -15px;
 }
 
 .activities__item {
   position: relative;
-  margin-right: 30px;
-}
-
-.activities__item:last-child {
-  margin-right: 0;
+  width: calc((100% - 6 * 15px) / 3);
+  margin: 15px;
 }
 
 .activities__item::after {
