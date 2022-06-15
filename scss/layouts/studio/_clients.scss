@@ -3,11 +3,11 @@
   align-items: center;
   justify-content: center;
 
-  @include mq(mobile) {
+  @include mq(mobile-only) {
     flex-wrap: wrap;
     margin: -15px;
   }
-  @include mq(tablet) {
+  @include mq(tablet-only) {
     flex-wrap: wrap;
     margin: -15px;
   }

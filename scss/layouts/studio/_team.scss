@@ -1,14 +1,5 @@
-.team-container {
+.team {
   background-color: var(--secondary-bg-color);
-  @include mq(mobile) {
-    padding-top: 60px;
-  }
-  @include mq(tablet) {
-    padding-top: 60px;
-  }
-  @include mq(desktop) {
-    padding-top: 94px;
-  }
 }
 
 .team__member {
@@ -19,14 +10,14 @@
     padding-top: 30px;
     padding-bottom: 24px;
   }
-  @include mq(tablet) {
+  @include mq(tablet-only) {
     padding-top: 30px;
     padding-bottom: 24px;
   }
 }
 
 .team__list {
-  @include mq(tablet) {
+  @include mq(tablet-only) {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -51,7 +42,7 @@
     }
   }
 
-  @include mq(tablet) {
+  @include mq(tablet-only) {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }

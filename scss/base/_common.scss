@@ -29,14 +29,9 @@ body {
 }
 
 .section {
-  @include mq(mobile) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  @include mq(tablet) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   @include mq(desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
