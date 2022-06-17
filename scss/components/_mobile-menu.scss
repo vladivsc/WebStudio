@@ -12,6 +12,22 @@
   background-color: #fff;
 }
 
+.mobile-menu-btn {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  transition: fill var(--fast-anim);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    cursor: pointer;
+  }
+}
+
 .mobile-menu__contacts {
   margin-top: auto;
 }

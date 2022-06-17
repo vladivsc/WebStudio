@@ -1,5 +1,9 @@
 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
   <defs>
+    <!-- *Mobile-menu -->
+    <symbol id="mobile-menu" viewBox="0 0 48 32">
+      <path d="M0 5.333V0h48v5.333H0zm0 13.334h48v-5.333H0v5.333zM0 32h48v-5.333H0V32z" />
+    </symbol>
     <!-- *Close* -->
     <symbol id="icon-close" viewBox="0 0 32 32">
       <path
