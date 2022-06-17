@@ -14,13 +14,7 @@
 .gallery-nav__item {
   @include mq(mobile-only) {
     margin-bottom: 15px;
-
-    // *Если надо
-    // &:nth-last-child(-n + 2) {
-    //   margin-bottom: 0;
-    // }
   }
-
   &:not(:last-child) {
     margin-right: 8;
   }
