@@ -1,4 +1,9 @@
 .gallery-nav__list {
+  @include mq(mobile-only) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,10 +12,17 @@
 }
 
 .gallery-nav__item {
-  margin-right: 8px;
+  @include mq(mobile-only) {
+    margin-bottom: 15px;
 
-  &:last-child {
-    margin-right: 0;
+    // *Если надо
+    // &:nth-last-child(-n + 2) {
+    //   margin-bottom: 0;
+    // }
+  }
+
+  &:not(:last-child) {
+    margin-right: 8;
   }
 }
 

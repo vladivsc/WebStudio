@@ -54,11 +54,11 @@
         </nav>
 
         <ul class="header-contacts list">
-          <li class="item header-contacts__item">
+          <li class="header-contacts__item item">
             <a
               class="header-contacts__link link"
               href="mailto:info@devstudio.com"
-              ><svg class="header-contacts__icon" width="16" height="12">
+              ><svg class="header-contacts__icon-mail" width="16" height="12">
                 <use href="./images/sprite.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
@@ -66,17 +66,120 @@
           </li>
           <li class="header-contacts__item item">
             <a class="header-contacts__link link" href="tel:+380961111111">
-              <svg class="header-contacts__icon" width="10" height="16">
+              <svg class="header-contacts__icon-phone" width="10" height="16">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
           </li>
         </ul>
+
+        <!-- *Mobile-menu btn* -->
+        <button
+          type="button"
+          class="menu-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="icon-menu"
+            width="40"
+            height="40"
+            aria-label="Mobile Menu Toggle"
+          >
+            <use class="icon-menu" href="./images/sprite.svg#mobile-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
+      <!-- *Mobile-menu* -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button
+          type="button"
+          class="menu-button js-close-menu"
+          aria-controls="menu-container"
+        >
+          <svg
+            class="icon-cross"
+            width="40"
+            height="40"
+            aria-label="Mobile Menu Toggle"
+          >
+            <use class="icon-cross" href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu__nav-item">
+          <li class="mobile-menu__nav-list list">
+            <a href="index.html" class="mobile-menu__nav-link link">Studio</a>
+          </li>
+          <li class="mobile-menu__nav-list list">
+            <a href="portfolio.html" class="mobile-menu__nav-link link"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mobile-menu__nav-list list">
+            <a href="" class="mobile-menu__nav-link link">Contacts</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu__contacts-item">
+          <li class="mobile-menu__contacts-list list">
+            <a href="tel:+380961111111" class="mobile-menu__contacts-phone link"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-menu__contacts-list list">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-menu__contacts-mail link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-menu__socials-item">
+          <li class="mobile-menu__socials-list list">
+            <a
+              href=""
+              class="mobile-menu__socials-link link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-menu__socials-list list">
+            <a
+              href=""
+              class="mobile-menu__socials-link link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-menu__socials-list list">
+            <a
+              href=""
+              class="mobile-menu__socials-link link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-menu__socials-list list">
+            <a
+              href=""
+              class="mobile-menu__socials-link link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+
       <!-- *Gallery-navigation section* -->
 
       <section class="gallery-section section">
@@ -111,11 +214,15 @@
             <li class="content__item item">
               <a class="content__link link" href="">
                 <div class="content-post">
-                  <img
-                    src="./images/portfolio/project-1.jpg"
-                    alt="Website example"
-                    width="370"
-                  />
+                  <picture>
+                    <img
+                      src="./images/mobile-img/project-1-m.jpg"
+                      alt="Website example"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="content-post__text">
                     Resources offer complex solutions with different levels of
                     functionality and services. Thanks to this, of course,
@@ -132,11 +239,15 @@
             <li class="content__item item">
               <a class="content__link link" href="">
                 <div class="content-post">
-                  <img
-                    src="./images/portfolio/project-2.jpg"
-                    alt="Poster New Orleans vs Golden Star"
-                    width="370"
-                  />
+                  <picture>
+                    <img
+                      src="./images/mobile-img/project-2-m.jpg"
+                      alt="Poster New Orleans vs Golden Star"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="content-post__text">
                     Resources offer complex solutions with different levels of
                     functionality and services. Thanks to this, of course,
@@ -155,11 +266,15 @@
             <li class="content__item item">
               <a class="content__link link" href="">
                 <div class="content-post">
-                  <img
-                    src="./images/portfolio/project-3.jpg"
-                    alt="Seafood restaurant"
-                    width="370"
-                  />
+                  <picture>
+                    <img
+                      src="./images/mobile-img/project-3-m.jpg"
+                      alt="Seafood restaurant"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="content-post__text">
                     Resources offer complex solutions with different levels of
                     functionality and services. Thanks to this, of course,
@@ -177,9 +292,11 @@
               <a class="content__link link" href="">
                 <div class="content-post">
                   <img
-                    src="./images/portfolio/project-4.jpg"
+                    src="./images/mobile-img/project-4-m.jpg"
                     alt="Project Prime"
-                    width="370"
+                    width="450"
+                    height="294"
+                    loading="lazy"
                   />
                   <p class="content-post__text">
                     Resources offer complex solutions with different levels of
@@ -198,9 +315,11 @@
               <a class="content__link link" href="">
                 <div class="content-post">
                   <img
-                    src="./images/portfolio/project-5.jpg"
+                    src="./images/mobile-img/project-5-m.jpg"
                     alt="Project Boxes"
-                    width="370"
+                    width="450"
+                    height="294"
+                    loading="lazy"
                   />
                   <p class="content-post__text">
                     Resources offer complex solutions with different levels of
@@ -219,9 +338,11 @@
               <a class="content__link link" href="">
                 <div class="content-post">
                   <img
-                    src="./images/portfolio/project-6.jpg"
+                    src="./images/mobile-img/project-6-m.jpg"
                     alt="Book Limited Edition"
-                    width="370"
+                    width="450"
+                    height="294"
+                    loading="lazy"
                   />
                   <p class="content-post__text">
                     Resources offer complex solutions with different levels of
@@ -242,9 +363,11 @@
               <a class="content__link link" href="">
                 <div class="content-post">
                   <img
-                    src="./images/portfolio/project-7.jpg"
+                    src="./images/mobile-img/project-7-m.jpg"
                     alt="Book Limited Edition"
-                    width="370"
+                    width="450"
+                    height="294"
+                    loading="lazy"
                   />
                   <p class="content-post__text">
                     Resources offer complex solutions with different levels of
@@ -265,9 +388,11 @@
               <a class="content__link link" href="">
                 <div class="content-post">
                   <img
-                    src="./images/portfolio/project-8.jpg"
+                    src="./images/mobile-img/project-8-m.jpg"
                     alt="Project LAB"
-                    width="370"
+                    width="450"
+                    height="294"
+                    loading="lazy"
                   />
                   <p class="content-post__text">
                     Resources offer complex solutions with different levels of
@@ -286,9 +411,11 @@
               <a class="content__link link" href="">
                 <div class="content-post">
                   <img
-                    src="./images/portfolio/project-9.jpg"
+                    src="./images/mobile-img/project-9-m.jpg"
                     alt="Application for Business"
-                    width="370"
+                    width="450"
+                    height="294"
+                    loading="lazy"
                   />
                   <p class="content-post__text">
                     Resources offer complex solutions with different levels of
@@ -313,12 +440,12 @@
     <footer class="footer">
       <div class="footer-container container">
         <div class="footer-contacts">
-          <a class="link logo logo-primary-footer" href="./index.html"
+          <a class="logo-primary-footer link logo" href="./index.html"
             >Web<span class="logo-secondary-footer">Studio</span></a
           >
           <address>
-            <ul class="list footer-contacts__list">
-              <li class="item footer-contacts__location">
+            <ul class="footer-contacts__list list">
+              <li class="footer-contacts__location item">
                 <a
                   class="link footer-contacts__location-link"
                   href="https://goo.gl/maps/CiyNuwv28CsmYzVaA"
@@ -328,14 +455,14 @@
                   Kyiv, Lesya Ukrainka Ave, 26</a
                 >
               </li>
-              <li class="item footer-contacts__item">
+              <li class="footer-contacts__item item">
                 <a
                   class="link footer-contacts__link"
                   href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="item footer-contacts__item">
+              <li class="footer-contacts__item item">
                 <a class="link footer-contacts__link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
@@ -407,16 +534,25 @@
               id="footer-email"
               placeholder="E-mail"
             />
-            <button type="submit" class="btn subscribe-btn">
-              <span class="subscribe-text">Subscribe</span>
-              <svg class="" width="24" height="24">
-                <use href="./images/sprite.svg#icon-send"></use>
-              </svg>
-            </button>
+            <div class="subscribe-btn-box">
+              <button type="submit" class="btn subscribe-btn">
+                <span class="subscribe-text">Subscribe</span>
+                <svg class="" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
