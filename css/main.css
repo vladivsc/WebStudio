@@ -230,13 +230,6 @@ img {
   z-index: 10;
 }
 
-@media screen and (max-width: 767.98px) {
-  .backdrop {
-    padding: 40px;
-    overflow-y: scroll;
-  }
-}
-
 .backdrop.modal-wrapper {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
@@ -262,6 +255,32 @@ img {
   transition: opacity 300ms ease-in-out 200ms, -webkit-transform 300ms ease-in-out 200ms;
   transition: transform 300ms ease-in-out 200ms, opacity 300ms ease-in-out 200ms;
   transition: transform 300ms ease-in-out 200ms, opacity 300ms ease-in-out 200ms, -webkit-transform 300ms ease-in-out 200ms;
+}
+
+@media screen and (max-width: 480px) {
+  .modal-wrapper {
+    padding: 40px;
+    overflow-y: scroll;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1199px) {
+  .modal-wrapper {
+    padding: 40px;
+    overflow-y: scroll;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 450px;
+  }
 }
 
 .is-hidden .modal-wrapper {
@@ -446,7 +465,6 @@ img {
   width: 16px;
   height: 15px;
   margin-right: 8px;
-  margin-left: 12px;
   border-radius: 2px;
   border: 2px solid var(--primary-text-color);
   -webkit-transition: border-color var(--fast-anim), background-color var(--fast-anim);
@@ -463,38 +481,21 @@ img {
   transition: opacity var(--fast-anim);
 }
 
-.mobile-menu {
+.menu-container {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   background-color: #fff;
 }
 
-.mobile-menu-btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  -webkit-transition: fill var(--fast-anim);
-  transition: fill var(--fast-anim);
-}
-
-.mobile-menu-btn:hover, .mobile-menu-btn:focus {
-  fill: var(--accent-color);
-  cursor: pointer;
+.menu-container .is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .mobile-menu__contacts {
@@ -502,6 +503,9 @@ img {
 }
 
 .header {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   border-bottom: 1px solid #ececec;
 }
 
@@ -515,6 +519,12 @@ img {
   height: 80px;
 }
 
+@media screen and (max-width: 480px) {
+  .navigation {
+    display: none;
+  }
+}
+
 .navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -526,6 +536,15 @@ img {
 
 .navigation__item {
   margin-left: 50px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .navigation__item {
+    margin-left: 50px;
+  }
+  .navigation__item:first-child {
+    margin-left: 88px;
+  }
 }
 
 .navigation__item:first-child {
@@ -570,12 +589,41 @@ img {
   margin-left: auto;
 }
 
-.header-contacts__item {
-  margin-right: 30px;
+@media screen and (max-width: 480px) {
+  .header-contacts {
+    display: none;
+  }
 }
 
-.header-contacts__item:last-child {
-  margin-right: 0px;
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .header-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .header-contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts__item {
+    margin-right: 30px;
+  }
+  .header-contacts__item:last-child {
+    margin-right: 0px;
+  }
 }
 
 .header-contacts__link {
@@ -598,9 +646,28 @@ img {
   color: var(--accent-color);
 }
 
-.header-contacts__icon {
+.header-contacts__icon-mail {
   margin-right: 10px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .header-contacts__icon-mail {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+.header-contacts__icon-phone {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .header-contacts__icon-phone {
+    width: 10px;
+    height: 14px;
+  }
 }
 
 .hero {

@@ -1,8 +1,4 @@
 .backdrop {
-  @include mq(mobile-only) {
-    padding: 40px;
-    overflow-y: scroll;
-  }
   position: fixed;
   top: 0;
   left: 0;
@@ -28,6 +24,27 @@
 }
 
 .modal-wrapper {
+  @media screen and (max-width: 480px) {
+    padding: 40px;
+    overflow-y: scroll;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 450px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 1199px) {
+    padding: 40px;
+    overflow-y: scroll;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 450px;
+  }
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -47,8 +64,3 @@
     opacity: 0;
   }
 }
-
-// .is-hidden .modal-wrapper {
-//   transform: translate(-50%, -50%) scale(0.4);
-//   opacity: 0;
-// }
