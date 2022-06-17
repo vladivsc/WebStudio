@@ -1659,7 +1659,7 @@ img {
 }
 
 .gallery-nav__item:not(:last-child) {
-  margin-right: 8;
+  margin-right: 8px;
 }
 
 .gallery-nav__btn {
