@@ -6,13 +6,16 @@
     justify-content: center;
   }
   display: flex;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
 
   @include mq(tablet-only) {
     margin: -15px;
   }
   @include mq(desktop) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     margin: -15px;
   }
 }
