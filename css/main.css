@@ -53,6 +53,28 @@ body {
   color: var(--primary-text-color);
 }
 
+@media screen and (max-width: 767.98px) {
+  .title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+  }
+}
+
 .text {
   font-family: var(--main-font);
   color: var(--main-text-color);
@@ -839,8 +861,6 @@ img {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile-img/header-img-m.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile-img/header-img-m.jpg);
-    padding-top: 118px;
-    padding-bottom: 118px;
   }
 }
 
@@ -855,8 +875,6 @@ img {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet-img/header-img-t.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet-img/header-img-t.jpg);
-    padding-top: 118px;
-    padding-bottom: 118px;
   }
 }
 
@@ -871,8 +889,6 @@ img {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop-img/header-img-d.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop-img/header-img-d.jpg);
-    padding-top: 200px;
-    padding-bottom: 200px;
   }
 }
 
@@ -885,18 +901,30 @@ img {
 
 @media screen and (max-width: 767.98px) {
   .hero-container {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    padding-left: 60px;
+    padding-right: 60px;
     text-align: center;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .hero-container {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    padding-left: 204px;
+    padding-right: 204px;
     text-align: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero-container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 237px;
+    padding-right: 237px;
     text-align: center;
   }
 }
@@ -917,14 +945,14 @@ img {
 @media screen and (max-width: 767.98px) {
   .hero__title {
     font-size: 26px;
-    line-height: 42px;
+    line-height: 1.61;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .hero__title {
     font-size: 26px;
-    line-height: 42px;
+    line-height: 1.61;
   }
 }
 
@@ -1108,7 +1136,7 @@ img {
   padding-bottom: 30px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767.98px) {
   .team__member {
     padding-top: 30px;
     padding-bottom: 24px;
@@ -1610,6 +1638,7 @@ img {
 @media screen and (max-width: 767.98px) {
   .footer-container .subscribe__email {
     width: 100%;
+    max-width: 450px;
     margin-bottom: 20px;
   }
 }

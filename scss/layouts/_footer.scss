@@ -234,6 +234,7 @@
   .subscribe__email {
     @include mq(mobile-only) {
       width: 100%;
+      max-width: 450px;
       margin-bottom: 20px;
     }
     @include mq(tablet-only) {
