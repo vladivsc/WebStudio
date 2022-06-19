@@ -14,6 +14,9 @@
         ),
         url(../images/mobile-img/header-img-m@2x.jpg);
     }
+
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 
   // *Tablet
@@ -31,6 +34,9 @@
         ),
         url(../images/tablet-img/header-img-t@2x.jpg);
     }
+
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 
   // *Desktop
@@ -48,12 +54,12 @@
         ),
         url(../images/desktop-img/header-img-d@2x.jpg);
     }
-  }
-  max-width: 1600px;
-  margin: 0 auto;
 
-  padding-top: 200px;
-  padding-bottom: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  max-width: 1200px;
+  margin: 0 auto;
 
   background-color: rgba(47, 48, 58, 0.4);
 
@@ -63,11 +69,28 @@
 }
 
 .hero-container {
-  // width: 696px;
-  text-align: center;
+  @include mq(mobile-only) {
+    text-align: center;
+  }
+  @include mq(tablet-only) {
+    text-align: center;
+  }
+  @include mq(desktop) {
+    text-align: center;
+  }
 }
 
 .hero__title {
+  @include mq(mobile-only) {
+    font-size: 26px;
+    line-height: 1.61px;
+  }
+  @include mq(tablet-only) {
+  }
+  @include mq(desktop) {
+  }
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
 
   font-weight: 900;

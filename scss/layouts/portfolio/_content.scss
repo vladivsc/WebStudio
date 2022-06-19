@@ -1,3 +1,15 @@
+.content {
+  @include mq(Mobile) {
+    max-width: 480px;
+  }
+  @include mq(tablet) {
+    max-width: 768px;
+  }
+  @include mq(desktop) {
+    max-width: 1200px;
+  }
+}
+
 .content__list {
   @include mq(mobile-only) {
     display: flex;
