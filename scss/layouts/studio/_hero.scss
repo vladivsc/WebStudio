@@ -58,7 +58,7 @@
     padding-top: 200px;
     padding-bottom: 200px;
   }
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 
   background-color: rgba(47, 48, 58, 0.4);
@@ -83,12 +83,13 @@
 .hero__title {
   @include mq(mobile-only) {
     font-size: 26px;
-    line-height: 1.61px;
+    line-height: 42px;
   }
   @include mq(tablet-only) {
+    font-size: 26px;
+    line-height: 42px;
   }
-  @include mq(desktop) {
-  }
+
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
