@@ -397,9 +397,17 @@ img {
 }
 
 .modal-form__text-policy {
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 1.16;
   color: var(--main-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__text-policy {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .modal-form__link-policy {
@@ -819,7 +827,7 @@ img {
 }
 
 .hero {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   background-color: rgba(47, 48, 58, 0.4);
   background-repeat: no-repeat;
