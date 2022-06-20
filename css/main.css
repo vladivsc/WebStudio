@@ -861,6 +861,8 @@ img {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile-img/header-img-m.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile-img/header-img-m.jpg);
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 }
 
@@ -875,6 +877,8 @@ img {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet-img/header-img-t.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet-img/header-img-t.jpg);
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 }
 
@@ -889,6 +893,9 @@ img {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop-img/header-img-d.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop-img/header-img-d.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
   }
 }
 
@@ -901,30 +908,21 @@ img {
 
 @media screen and (max-width: 767.98px) {
   .hero-container {
-    padding-top: 118px;
-    padding-bottom: 118px;
-    padding-left: 60px;
-    padding-right: 60px;
+    width: 360px;
     text-align: center;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .hero-container {
-    padding-top: 118px;
-    padding-bottom: 118px;
-    padding-left: 204px;
-    padding-right: 204px;
+    width: 360px;
     text-align: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero-container {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    padding-left: 237px;
-    padding-right: 237px;
+    width: 696px;
     text-align: center;
   }
 }
@@ -998,7 +996,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .feature__list {
-    width: calc((100% - 8 * 15px) / 4);
+    -ms-flex-preferred-size: calc((100% - 8 * 15px) / 4);
+        flex-basis: calc((100% - 8 * 15px) / 4);
     margin: 15px;
   }
 }
@@ -1027,14 +1026,12 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .feature__box {
-    width: 100%;
     height: 120px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .feature__box {
-    width: 100%;
     height: 120px;
   }
 }
@@ -1433,11 +1430,8 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .footer-container .footer-contacts__item {
+  .footer-container .footer-contacts__item:not(:last-child) {
     margin-bottom: 9px;
-  }
-  .footer-container .footer-contacts__item:last-child {
-    margin-bottom: 0px;
   }
 }
 
@@ -1454,6 +1448,12 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 767.98px) {
+  .footer-container .footer-socials {
+    margin-top: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
@@ -1500,6 +1500,7 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 60px;
   }
 }
 
@@ -1525,18 +1526,8 @@ img {
   }
 }
 
-.footer-container .footer-socials__item {
+.footer-container .footer-socials__item:not(:last-child) {
   margin-right: 10px;
-}
-
-.footer-container .footer-socials__item:last-child {
-  margin-right: 0px;
-}
-
-@media screen and (max-width: 767.98px) {
-  .footer-container .footer-socials__item {
-    margin-bottom: 60px;
-  }
 }
 
 .footer-container .footer-socials__link {
@@ -1735,7 +1726,7 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1758,8 +1749,11 @@ img {
   .gallery-nav__item:nth-child(-n + 3) {
     margin-bottom: 15px;
   }
-  .gallery-nav__item:not(:first-child) {
-    margin-left: 8px;
+  .gallery-nav__item:not(:last-child) {
+    margin-right: 8px;
+  }
+  .gallery-nav__item:nth-child(3) {
+    margin-right: 0px;
   }
 }
 

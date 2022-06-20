@@ -78,9 +78,8 @@
     }
 
     @include mq(desktop) {
-      margin-bottom: 9px;
-      &:last-child {
-        margin-bottom: 0px;
+      &:not(:last-child) {
+        margin-bottom: 9px;
       }
     }
   }
@@ -105,6 +104,9 @@
   }
 
   .footer-socials {
+    @include mq(mobile-only) {
+      margin-top: 60px;
+    }
     @include mq(tablet-only) {
       padding-top: 65px;
       padding-right: 89px;
@@ -137,6 +139,7 @@
     @include mq(mobile-only) {
       display: flex;
       justify-content: center;
+      margin-bottom: 60px;
     }
     @include mq(tablet-only) {
       display: flex;
@@ -150,13 +153,8 @@
   }
 
   .footer-socials__item {
-    margin-right: 10px;
-
-    &:last-child {
-      margin-right: 0px;
-    }
-    @include mq(mobile-only) {
-      margin-bottom: 60px;
+    &:not(:last-child) {
+      margin-right: 10px;
     }
   }
 

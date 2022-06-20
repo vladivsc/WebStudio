@@ -2,7 +2,7 @@
   @include mq(mobile-only) {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     justify-content: flex-start;
   }
   display: flex;
@@ -24,8 +24,11 @@
       margin-bottom: 15px;
     }
 
-    &:not(:first-child) {
-      margin-left: 8px;
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+    &:nth-child(3) {
+      margin-right: 0px;
     }
   }
 

@@ -14,6 +14,8 @@
         ),
         url(../images/mobile-img/header-img-m@2x.jpg);
     }
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 
   // *Tablet
@@ -31,6 +33,8 @@
         ),
         url(../images/tablet-img/header-img-t@2x.jpg);
     }
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 
   // *Desktop
@@ -48,6 +52,9 @@
         ),
         url(../images/desktop-img/header-img-d@2x.jpg);
     }
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
   }
   max-width: 1200px;
   margin: 0 auto;
@@ -61,27 +68,15 @@
 
 .hero-container {
   @include mq(mobile-only) {
-    padding-top: 118px;
-    padding-bottom: 118px;
-    padding-left: 60px;
-    padding-right: 60px;
-
+    width: 360px;
     text-align: center;
   }
   @include mq(tablet-only) {
-    padding-top: 118px;
-    padding-bottom: 118px;
-    padding-left: 204px;
-    padding-right: 204px;
-
+    width: 360px;
     text-align: center;
   }
   @include mq(desktop) {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    padding-left: 237px;
-    padding-right: 237px;
-
+    width: 696px;
     text-align: center;
   }
 }

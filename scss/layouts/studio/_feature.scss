@@ -23,8 +23,14 @@
     margin: 15px;
   }
   @include mq(desktop) {
-    width: calc((100% - 8 * 15px) / 4);
+    flex-basis: calc((100% - 8 * 15px) / 4);
     margin: 15px;
+
+    // min-width: 270px;
+
+    // &:not(:last-child) {
+    //   margin-right: 30px;
+    // }
   }
 }
 
@@ -43,11 +49,12 @@
     height: 120px;
   }
   @include mq(tablet-only) {
-    width: 100%;
+    // width: 100%;
     height: 120px;
   }
   @include mq(desktop) {
-    width: 100%;
+    // min-width: 270px;
+    // width: 100%;
     height: 120px;
   }
 }
